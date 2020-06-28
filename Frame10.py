@@ -21,7 +21,7 @@ phi = (p-1)*(q-1)
 
 d = invert(e,phi)
 
-m = long_to_bytes(pow(c,d,N)).decode("utf-8")
+m = long_to_bytes(pow(c,d,N))
 print(m)
 
 
