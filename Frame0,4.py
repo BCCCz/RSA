@@ -20,11 +20,9 @@ if t < 0:
     c2 = invert(c2, None)
 
 M = powmod(c1, s, N) * powmod(c2, t, N) % N
-
 m = long_to_bytes(M)
-
 print(m)
 
-# m =My secre
+# m = My secre
 
 

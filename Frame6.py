@@ -1,3 +1,4 @@
+#Pollard p-1
 from gmpy2 import *
 from Crypto.Util.number import *
 
