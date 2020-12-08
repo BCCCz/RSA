@@ -5,19 +5,7 @@ from gmpy2 import *
 from Crypto.Util.number import *
 from functools import reduce
 
-
-def CRT(items):
-    N = reduce(lambda x, y: x * y, (i[1] for i in items))
-    result = 0
-    for a, n in items:
-        m = N // n
-        d, r, s = gcdext(n, m)
-        if d != 1:
-            raise Exception("Input not pairwise co-prime")
-        result += a * s * m
-    return result % N, N
-
-
+    
 # e, n, c
 e = 0x5
 n = [0x8365D1FF23709FAAEF6330AECA9C848B292E0872C5C41E8CBE9D0780F32EBFC5FCC7947BD666F06AA619F952AFB8D7C08B9211960D1916235D8AB3A60DEC45B1EF5CC21848E56D5235717186EAD51AE22A5661BDFDC42E31F9181F6AB1D070FDEBB078A9980D7A0571B587130A1D3056CBA40CBBA287CD5031838BAB893B476B,

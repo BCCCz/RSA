@@ -24,6 +24,5 @@ d = invert(e,phi)
 m = long_to_bytes(pow(c,d,N))
 print(m)
 
-
 # m = will get
 

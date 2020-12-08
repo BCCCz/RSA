@@ -21,7 +21,7 @@ if t < 0:
 
 M = powmod(c1, s, N) * powmod(c2, t, N) % N
 m = long_to_bytes(M)
-print(m)
+print(c1)
 
 # m = My secre
 
